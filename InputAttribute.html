@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>EMPLOYEE COURSE REGISTRATION FORM</h2>
+    <h2>EMPLOYEE COURSE REGISTRATION FORM</h2>
+    <form action="./success.html">
+        <input type="text" value="NESOFT" readonly>
+        <input type="text" value="NESOFT" disabled>
+        <input type="text" placeholder="set username" title="only alphabets allowed" pattern="[A-Za-z]*" minlength="2" maxlength="6" /> <!-- length range : minlength, maxlength-->
+        <label for="age">Enter your age:</label>
+        <input type="number" min="21" max="40" id="age" title="age between 21 to 40"> <!-- 21 to 40 value range : min, max-->
+        <!-- create password field and set strong password pattern to validate pattern-->
+        <input type="text" placeholder="enter name" required>
+        <div class="gendergroup">
+            <input type="radio" id="radio1" value="male" name="gender" checked><label for="radio1">:MALE</label>
+            <input type="radio" id="radio2" value="female" name="gender"><label for="radio2">:FEMALE</label>
+        </div>
+        <input type="datetime-local">
+        <button type="submit">REGISTER</button>
+        <input type="submit" value="REGISTER" />
+        <input type="image" height="200" width="200" src="data:image/png;base64,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">
+        <input type="color">
+    </form>
+</body>
+</html>
